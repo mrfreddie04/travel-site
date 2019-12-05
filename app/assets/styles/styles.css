@@ -1,0 +1,20 @@
+/*  @import is a native css feature
+    But we want to embed the imported files into styles.css
+    So that webpack and postcss has to deal only with a single css file
+*/
+
+/*  normalize is an alternative to css resets. it adjusts styles of certain elements in an effort
+    to make all browsers render things consistently.
+    Recommended to be used on all projects.
+*/
+@import "normalize.css"; /* just the package name*/
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic-content-container";

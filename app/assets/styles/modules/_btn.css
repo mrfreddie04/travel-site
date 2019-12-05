@@ -1,0 +1,20 @@
+.btn {
+    color: #fff;
+    background-color: $mainBlue;
+    text-decoration: none; /*remove underscore*/
+    padding: 0.75rem 1.2rem; /*to make the button appear larger*/
+    display: inline-block; /*to make parent elements aware of vertical padding*/
+    
+    &--orange {
+        background-color: $mainOrange;
+    }    
+
+    &--large {
+        padding: 0.9375rem 1.5rem;
+
+        @mixin atSmall {
+            font-size: 1.25rem;
+        }           
+    }    
+}
+
